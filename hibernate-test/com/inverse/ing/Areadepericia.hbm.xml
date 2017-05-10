@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2017 03:21:19 PM by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.inverse.ing.Areadepericia" table="areadepericia" schema="public">
+        <composite-id name="id" class="com.inverse.ing.AreadepericiaId">
+            <key-property name="descripcion" type="string">
+                <column name="descripcion" />
+            </key-property>
+            <key-property name="estatus" type="java.lang.Character">
+                <column name="estatus" length="1" />
+            </key-property>
+            <key-property name="codigoarea" type="int">
+                <column name="codigoarea" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

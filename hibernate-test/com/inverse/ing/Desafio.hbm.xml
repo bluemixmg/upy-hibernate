@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2017 03:21:19 PM by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.inverse.ing.Desafio" table="desafio" schema="public">
+        <composite-id name="id" class="com.inverse.ing.DesafioId">
+            <key-property name="titulo" type="string">
+                <column name="titulo" />
+            </key-property>
+            <key-property name="descripcion" type="string">
+                <column name="descripcion" />
+            </key-property>
+            <key-property name="categoria" type="string">
+                <column name="categoria" />
+            </key-property>
+            <key-property name="fechacaducidad" type="date">
+                <column name="fechacaducidad" length="13" />
+            </key-property>
+            <key-property name="tipo" type="java.lang.Boolean">
+                <column name="tipo" />
+            </key-property>
+            <key-property name="riforganizacion" type="string">
+                <column name="riforganizacion" />
+            </key-property>
+            <key-property name="estatus" type="java.lang.Character">
+                <column name="estatus" length="1" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="prioridad" type="java.lang.Integer">
+                <column name="prioridad" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

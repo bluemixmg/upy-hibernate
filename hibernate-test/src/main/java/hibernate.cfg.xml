@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="MapeoPrueba">
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">8sVfSzZ8qKUtC2xG9pp82UOheFiLK2oZ</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://echo-01.db.elephantsql.com:5432/xfkmzdop</property>
+        <property name="hibernate.connection.username">xfkmzdop</property>
+        <property name="hibernate.default_schema">xfkmzdop</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+    </session-factory>
+</hibernate-configuration>

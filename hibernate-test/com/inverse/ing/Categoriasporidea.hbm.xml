@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2017 03:21:19 PM by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="com.inverse.ing.Categoriasporidea" table="categoriasporidea" schema="public">
+        <composite-id name="id" class="com.inverse.ing.CategoriasporideaId">
+            <key-property name="idIdea" type="java.lang.Integer">
+                <column name="id_idea" />
+            </key-property>
+            <key-property name="idCategoria" type="java.lang.Integer">
+                <column name="id_categoria" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

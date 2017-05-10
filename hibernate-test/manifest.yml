@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: hibernate-test
+  host: hibernate-test
+  disk_quota: 1024M
+  services:
+  - ElephantSQL-yp
+  - hibernate-test-cloudantNoSQLDB
